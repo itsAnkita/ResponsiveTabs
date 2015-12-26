@@ -1,0 +1,422 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'AzoSans Bold';
+    src: url('../fonts/azosans/AzoSans-Bold.woff2') format('woff2'), url('../fonts/azosans/AzoSans-Bold.woff') format('woff'), url('../fonts/azosans/AzoSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AzoSans Medium';
+    src: url('../fonts/azosans/AzoSans-Medium.woff2') format('woff2'), url('../fonts/azosans/AzoSans-Medium.woff') format('woff'), url('../fonts/azosans/AzoSans-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AzoSans Regular';
+    src: url('../fonts/azosans/AzoSans-Regular.woff2') format('woff2'), url('../fonts/azosans/AzoSans-Regular.woff') format('woff'), url('../fonts/azosans/AzoSans-Regular.ttf') format('truetype');
+}
+
+body {
+    font-size: 16px;
+    color: #5c5c5c;
+    font-family: 'Azosans Regular', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f25c5d;
+    width: 100%;
+    color: #fff;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    color: darkgrey;
+}
+
+.heading {
+    margin: 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.content {
+    margin: 30px 1px 2px 1px;
+    padding: 2px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.header-heading {
+    margin: 0 1px 0 1px;
+    padding-top: 45px;
+    font-size: 22px;
+    color: #b1b1b1;
+    font-family: 'Azosans Medium', sans-serif;
+}
+
+.toggle-menu {
+    height: 20px;
+    width: 24px;
+    float: right;
+}
+
+.toggle-menu-bars {
+    height: 4px;
+    width: 22px;
+    float: right;
+    margin-bottom: 4px;
+    background-color: #f25c5c;
+    display: inline-block;
+}
+
+.toggle-menu:after {
+    content: "";
+    display: block;
+    clear: right;
+}
+
+.tab-mobile {
+    height: 44px;
+    width: 100%;
+    background-color: #393939;
+    color: #9b9b9b;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding: 12px;
+}
+
+.nav-bar > li {
+    display: inline-block;
+}
+
+.nav-bar a {
+    width: 124px;
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #b1b1b1;
+    transition: all 0.5s ease;
+}
+
+.nav-bar {
+    margin: 71px 0 0px;
+}
+
+.images {
+    margin: 106px 1px 0px 0px;
+    padding: 1px;
+}
+
+.nav-bar > li.active {
+    background-color: #f25c5c;
+    color: #fff;
+}
+
+li.active > a {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tab-content div {
+    display: none;
+    padding-top: 78px;
+}
+
+a:hover {
+    color: #f25c5c;
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.footer {
+    margin: 112px 0 10px 0;
+}
+
+.social-media-icon {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    float: left;
+    margin: 12px 18px 12px 0;
+    position: relative;
+}
+
+.social-media-wrap::after {
+    content: "";
+    display: block;
+    clear: left;
+}
+
+.social-media-icon > .fa {
+    color: #f25c5d;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.container .wrapper {
+    padding: 0 39px;
+}
+
+.social-media-icon:hover .circular-transition {
+    transform: scale(0);
+}
+
+.social-media-icon:hover .fa {
+    color: #fff;
+}
+
+.circular-transition {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+    margin: -1px;
+}
+
+@media only screen and (min-width:1025px) {
+    .toggle-menu {
+        display: none;
+    }
+    .tab-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:641px) and (max-width: 1024px) {
+    .wrapper {
+        width: 100%;
+    }
+    .nav-bar {
+        width: 122px;
+        float: left;
+    }
+    .nav-bar li {
+        display: block;
+    }
+    .footer {
+        display: none;
+    }
+    body,
+    html {
+        height: 100%;
+    }
+    .container {
+        width: calc(100% - 122px);
+        float: left;
+        height: 100%;
+    }
+    .body::after {
+        content: "";
+        display: block;
+        clear: left;
+    }
+    .header-heading {
+        padding: 45px 40px;
+    }
+    .toggle-menu {
+        display: none;
+    }
+    .tab-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:639px) {
+    .header-heading {
+        width: 100%;
+        padding: 30px;
+    }
+    .toggle-menu {
+        display: inline-block;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .nav-bar li {
+        display: block;
+        width: 100%;
+        height: 75px;
+        padding:16px;
+        background-color: #fff;
+        border-bottom: 1px solid #b1b1b1;
+    }
+    .nav-bar {
+        position: absolute;
+        left: -100%;
+        top: 10px;
+        bottom: 0;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid #b1b1b1;
+        transition: all 0.3s ease;
+    }
+    .footer {
+        display: none;
+    }
+    .tab-mobile {
+        display: block;
+    }
+    .nav-bar.active {
+        left: 0;
+    }
+}
